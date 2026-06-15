@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: oklch(0.14 0.01 250);     /* Dark Industrial Charcoal */
+  --color-card: oklch(0.18 0.01 250);           /* Container Charcoal */
+  --color-primary: oklch(0.78 0.18 85);         /* Heavy Metal Branding Gold */
+  --color-foreground: oklch(0.98 0.005 0);      /* Premium Contrast Off-White */
+  --color-muted: oklch(0.65 0.01 250);          /* Concrete Accent Grey */
+
+  --color-brand-bg: oklch(0.14 0.01 250);
+  --color-brand-card: oklch(0.18 0.01 250);
+  --color-brand-accent: oklch(0.78 0.18 85);
+  --color-brand-text: oklch(0.98 0.005 0);
+  --color-brand-muted: oklch(0.65 0.01 250);
+  
+  --font-sans: var(--font-sans), sans-serif;
+  --font-display: var(--font-display), sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+@layer utilities {
+  .bg-honeycomb {
+    background-color: var(--color-brand-bg);
+    background-image: url("data:image/svg+xml,%3Csvg defer='' xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 28 L28 0 M28 50 L28 78 M14 21 L0 28 L0 50 L14 57 L28 50 M28 50 L42 57 L56 50 L56 28 L42 21 L28 28 M0 0 L0 14 L14 21 M56 0 L56 14 L42 21 M14 78 L0 85 L0 100 M42 78 L56 85 L56 100 M28 78 L14 85 M28 78 L42 85' fill='none' stroke='rgba(255,255,255,0.03)' stroke-width='1.2'/%3E%3C/svg%3E");
+  }
+}
+
