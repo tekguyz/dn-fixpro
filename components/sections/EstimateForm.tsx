@@ -331,21 +331,21 @@ export default function EstimateForm() {
 
                     {/* Submitted details summary widget */}
                     <div className="w-full bg-brand-bg/50 border border-white/5 rounded-xl p-4 text-xs font-mono text-left max-w-sm space-y-2">
-                      <div className="flex justify-between border-b border-white/5 pb-1 text-brand-muted">
-                        <span>CONTACT NAME:</span>
-                        <span className="text-white font-medium">{submittedData?.fullName}</span>
+                      <div className="flex justify-between border-b border-white/5 pb-1 text-brand-muted gap-4">
+                        <span className="shrink-0">CONTACT NAME:</span>
+                        <span className="text-white font-medium truncate max-w-[60%]">{submittedData?.fullName}</span>
                       </div>
-                      <div className="flex justify-between border-b border-white/5 pb-1 text-brand-muted">
-                        <span>SERVICE CALL:</span>
-                        <span className="text-brand-accent font-extrabold">{submittedData?.serviceType}</span>
+                      <div className="flex justify-between border-b border-white/5 pb-1 text-brand-muted gap-4">
+                        <span className="shrink-0">SERVICE CALL:</span>
+                        <span className="text-brand-accent font-extrabold truncate max-w-[60%]">{submittedData?.serviceType}</span>
                       </div>
-                      <div className="flex justify-between border-b border-white/5 pb-1 text-brand-muted">
-                        <span>PHONE INBOUND:</span>
-                        <span className="text-white font-medium">{submittedData?.phone}</span>
+                      <div className="flex justify-between border-b border-white/5 pb-1 text-brand-muted gap-4">
+                        <span className="shrink-0">PHONE INBOUND:</span>
+                        <span className="text-white font-medium shrink-0">{submittedData?.phone}</span>
                       </div>
-                      <div className="flex justify-between text-brand-muted">
-                        <span>DISPATCH RANGE:</span>
-                        <span className="text-white font-medium line-clamp-1">{submittedData?.location}</span>
+                      <div className="flex justify-between text-brand-muted gap-4">
+                        <span className="shrink-0">DISPATCH RANGE:</span>
+                        <span className="text-white font-medium truncate max-w-[60%]">{submittedData?.location}</span>
                       </div>
                     </div>
 

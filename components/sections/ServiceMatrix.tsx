@@ -188,7 +188,7 @@ export default function ServiceMatrix() {
                     {/* Bullet Highlights */}
                     <ul className="space-y-2 pt-2 border-t border-white/5">
                       {service.highlights.map((bullet) => (
-                        <li key={bullet} className="flex gap-2.5 items-start text-xs font-mono text-brand-muted leading-relaxed">
+                        <li key={bullet} className="flex gap-2.5 items-start text-xs font-sans text-brand-muted leading-relaxed">
                           <CheckCircle className="w-3.5 h-3.5 text-brand-accent shrink-0 mt-0.5" />
                           <span>{bullet}</span>
                         </li>

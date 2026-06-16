@@ -2,7 +2,6 @@
 
 import { ArrowRight, PhoneCall, Zap, CheckCircle } from 'lucide-react';
 import { motion } from 'motion/react';
-import ValueTicker from './ValueTicker';
 
 export default function Hero() {
   const scrollToForm = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -14,7 +13,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] flex flex-col justify-between bg-honeycomb border-b border-white/5">
+    <section className="relative overflow-hidden min-h-[calc(100dvh-4rem)] md:min-h-[calc(100vh-5rem)] flex flex-col justify-between bg-honeycomb border-b border-white/5">
       {/* Honeycomb Radial overlay for premium depth gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-brand-bg/40 via-brand-bg/85 to-brand-bg select-none pointer-events-none" />
 
@@ -47,7 +46,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black tracking-tight text-white leading-tight sm:leading-none"
+              className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-display font-black tracking-tight text-white leading-[1.1]"
               id="hero-title"
             >
               Same-Day Handyman & <br className="hidden sm:inline" />
@@ -65,6 +64,23 @@ export default function Hero() {
             >
               Same-Day Appliance Repair & Handyman Services Right to Your Door. No Storefront Overhead Means Lower Prices for You! $69 Diagnostic Fee Applied 100% to Your Repair.
             </motion.p>
+
+            {/* Mobile-only condensed dispatch guarantees */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.25 }}
+              className="flex lg:hidden flex-col gap-2.5 w-full text-left bg-brand-card/40 border border-white/5 p-4 rounded-xl mt-2"
+            >
+              <div className="flex gap-2.5 items-center text-xs text-brand-muted">
+                <CheckCircle className="w-4 h-4 text-brand-accent shrink-0" />
+                <span><strong className="text-white">No Storefront Overhead:</strong> Save 20-30% on labor costs.</span>
+              </div>
+              <div className="flex gap-2.5 items-center text-xs text-brand-muted">
+                <CheckCircle className="w-4 h-4 text-brand-accent shrink-0" />
+                <span><strong className="text-white">Fully Stocked Vans:</strong> Common parts on-board for same-day repairs.</span>
+              </div>
+            </motion.div>
 
             {/* Call To Actions */}
             <motion.div
@@ -165,9 +181,6 @@ export default function Hero() {
 
         </div>
       </div>
-
-      {/* Value Ticker - Anchored to the exact bottom of the screen */}
-      <ValueTicker />
     </section>
   );
 }

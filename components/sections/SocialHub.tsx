@@ -140,13 +140,13 @@ export default function SocialHub() {
 
               {/* Graphic Representation Widget of Facebook Feed */}
               <div className="p-3 bg-white/5 border border-white/5 rounded-lg flex gap-3.5 items-center">
-                <div className="w-9 h-9 bg-brand-accent/20 rounded-full flex items-center justify-center text-brand-accent text-xs font-bold font-mono">
+                <div className="w-9 h-9 bg-brand-accent/20 rounded-full flex items-center justify-center text-brand-accent text-xs font-bold font-mono shrink-0">
                   DF
                 </div>
-                <div className="flex-1 space-y-1">
-                  <div className="flex justify-between items-center">
-                    <p className="text-xs font-bold text-white leading-none">DN FIXPRO (Hollywood, FL)</p>
-                    <span className="text-[10px] font-mono text-brand-muted">June 2026</span>
+                <div className="flex-1 space-y-1 min-w-0">
+                  <div className="flex justify-between items-center gap-2">
+                    <p className="text-xs font-bold text-white leading-none truncate max-w-[65%]">DN FIXPRO (Hollywood, FL)</p>
+                    <span className="text-[10px] font-mono text-brand-muted shrink-0">June 2026</span>
                   </div>
                   <p className="text-[11px] text-brand-muted line-clamp-2 leading-snug">
                     &quot;Awesome service on our commercial line system dishwasher today! Super fast direct on-site technician response, saved us on Diagnostic Fee&quot;

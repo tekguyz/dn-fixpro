@@ -49,28 +49,28 @@ export default function Footer() {
             <h4 className="text-xs font-mono text-white font-extrabold uppercase tracking-widest">
               Navigation Linkways
             </h4>
-            <div className="flex flex-col space-y-2 text-xs">
+            <div className="flex flex-col space-y-1 text-xs">
               <button
                 onClick={() => handleScroll('#services')}
-                className="text-left text-brand-muted hover:text-brand-accent transition-colors min-h-[30px] cursor-pointer"
+                className="text-left text-brand-muted hover:text-brand-accent transition-colors min-h-[40px] py-1.5 cursor-pointer block"
               >
                 Our Elite Services
               </button>
               <button
                 onClick={() => handleScroll('#why-us')}
-                className="text-left text-brand-muted hover:text-brand-accent transition-colors min-h-[30px] cursor-pointer"
+                className="text-left text-brand-muted hover:text-brand-accent transition-colors min-h-[40px] py-1.5 cursor-pointer block"
               >
                 Diagnostic Guidelines
               </button>
               <button
                 onClick={() => handleScroll('#portfolio')}
-                className="text-left text-brand-muted hover:text-brand-accent transition-colors min-h-[30px] cursor-pointer"
+                className="text-left text-brand-muted hover:text-brand-accent transition-colors min-h-[40px] py-1.5 cursor-pointer block"
               >
                 &quot;Work in Public&quot; Portfolio
               </button>
               <button
                 onClick={() => handleScroll('#estimate-form')}
-                className="text-left text-brand-muted hover:text-brand-accent transition-colors min-h-[30px] cursor-pointer"
+                className="text-left text-brand-muted hover:text-brand-accent transition-colors min-h-[40px] py-1.5 cursor-pointer block"
               >
                 Request Dispatcher
               </button>
@@ -82,27 +82,27 @@ export default function Footer() {
             <h4 className="text-xs font-mono text-white font-extrabold uppercase tracking-widest">
               Direct Contact & Dispatch
             </h4>
-            <div className="space-y-2.5 text-xs">
+            <div className="space-y-1.5 text-xs">
               <a
                 href="tel:+17818858584"
-                className="flex items-start gap-2 text-brand-muted hover:text-brand-accent transition-all duration-200 min-h-[30px]"
+                className="flex items-center gap-2 text-brand-muted hover:text-brand-accent transition-all duration-200 min-h-[40px] py-1.5"
               >
-                <div className="p-1 rounded bg-white/5 border border-white/5 shrink-0 mt-0.5">
+                <div className="p-1.5 rounded bg-white/5 border border-white/5 shrink-0">
                   <PhoneCall className="w-3.5 h-3.5" />
                 </div>
-                <span className="font-semibold text-white pt-0.5">(781) 885-8584</span>
+                <span className="font-semibold text-white">(781) 885-8584</span>
               </a>
-              <div className="flex items-start gap-2 text-brand-muted min-h-[30px]">
-                <div className="p-1 rounded bg-white/5 border border-white/5 shrink-0 mt-0.5">
+              <div className="flex items-center gap-2 text-brand-muted min-h-[40px] py-1.5">
+                <div className="p-1.5 rounded bg-white/5 border border-white/5 shrink-0">
                   <MapPin className="w-3.5 h-3.5" />
                 </div>
-                <span className="pt-0.5 leading-relaxed">Hollywood, FL & surrounding Broward</span>
+                <span className="leading-relaxed">Hollywood, FL & surrounding Broward</span>
               </div>
-              <div className="flex items-start gap-2 text-brand-muted min-h-[30px]">
-                <div className="p-1 rounded bg-white/5 border border-white/5 shrink-0 mt-0.5">
+              <div className="flex items-center gap-2 text-brand-muted min-h-[40px] py-1.5">
+                <div className="p-1.5 rounded bg-white/5 border border-white/5 shrink-0">
                   <Mail className="w-3.5 h-3.5" />
                 </div>
-                <span className="pt-0.5 leading-relaxed break-all">dispatch@dnfixpro.com (Inquiries Only)</span>
+                <span className="leading-relaxed break-all">dispatch@dnfixpro.com (Inquiries Only)</span>
               </div>
             </div>
           </div>

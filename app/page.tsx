@@ -1,5 +1,6 @@
 import Header from '@/components/sections/Header';
 import Hero from '@/components/sections/Hero';
+import ValueTicker from '@/components/sections/ValueTicker';
 import ServiceMatrix from '@/components/sections/ServiceMatrix';
 import SocialHub from '@/components/sections/SocialHub';
 import EstimateForm from '@/components/sections/EstimateForm';
@@ -13,8 +14,11 @@ export default function Home() {
       <Header />
 
       <main className="flex-grow">
-        {/* Hero Section containing bottom-anchored minimal Value Ticker */}
+        {/* Hero Section */}
         <Hero />
+
+        {/* Value Ticker placed cleanly outside and below the initial viewport fold */}
+        <ValueTicker />
 
         {/* Dynamic / Interactive Service Matrix and Specialties */}
         <ServiceMatrix />

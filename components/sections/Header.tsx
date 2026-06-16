@@ -138,7 +138,7 @@ export default function Header() {
                     key={link.name}
                     href={link.href}
                     onClick={(e) => handleScroll(e, link.href)}
-                    className="px-3 py-2 text-md font-medium text-brand-muted hover:text-white hover:bg-white/5 rounded-md transition-colors"
+                    className="px-3 py-3.5 text-lg font-medium text-brand-muted hover:text-white hover:bg-white/5 rounded-md transition-colors block w-full"
                   >
                     {link.name}
                   </a>
