@@ -62,7 +62,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-sm sm:text-base text-brand-muted max-w-2xl mx-auto lg:mx-0 leading-relaxed font-sans"
             >
-              Same-Day Appliance Repair & Handyman Services Right to Your Door. No Storefront Overhead Means Lower Prices for You! $69 Diagnostic Fee Applied 100% to Your Repair.
+              Same-Day Appliance Repair & Handyman Services Right to Your Door. Our Direct Mobile Dispatch Model Means Great Value & Faster Response! $69 Diagnostic Fee Applied 100% to Your Repair.
             </motion.p>
 
             {/* Mobile-only condensed dispatch guarantees */}
@@ -74,7 +74,7 @@ export default function Hero() {
             >
               <div className="flex gap-2.5 items-center text-xs text-brand-muted">
                 <CheckCircle className="w-4 h-4 text-brand-accent shrink-0" />
-                <span><strong className="text-white">No Storefront Overhead:</strong> Save 20-30% on labor costs.</span>
+                <span><strong className="text-white">Direct-to-Door Dispatch:</strong> Ultra-efficient on-site services.</span>
               </div>
               <div className="flex gap-2.5 items-center text-xs text-brand-muted">
                 <CheckCircle className="w-4 h-4 text-brand-accent shrink-0" />
@@ -144,8 +144,8 @@ export default function Hero() {
                       <CheckCircle className="w-4 h-4" />
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-white">No Public Storefront Surcharge</p>
-                      <p className="text-xs font-medium text-brand-muted">You save 20-30% on labor costs because we operate completely mobile dispatch.</p>
+                      <p className="text-sm font-semibold text-white">Direct-to-Door Value Rates</p>
+                      <p className="text-xs font-medium text-brand-muted">We save you money by optimizing our route dispatch and eliminating dealership middlemen.</p>
                     </div>
                   </div>
 

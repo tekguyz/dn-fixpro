@@ -19,9 +19,9 @@ export default function FAQ() {
         'An expert, certified dispatcher-technician travels directly to your residential property or commercial facility to inspect your appliance or property item and pinpoint the failure. If you authorize us to proceed with the repair on-site, that $69 fee is 100% applied as a direct credit toward your final repair invoice!',
     },
     {
-      question: 'How can I trust your work without a physical showroom?',
+      question: 'How do you keep your on-site repair rates so competitive?',
       answer:
-        'By operating an entirely mobile-dispatch workshop, we bypass the heavy financial burden of a storefront lease and pass the savings (up to 30% lower rates) straight to you. We work transparently in public—check out our active Instagram and Facebook links in the navigation above to view real completed repair videos and photos posted daily!',
+        'By operating as a direct-to-door mobile dispatch network, we run an extremely efficient operation that eliminates unnecessary middlemen overhead, allowing us to pass significant labor savings straight to you. Plus, we work transparently in public—check out our live Instagram and Facebook channels in the navigation above to view real completed repair videos posted daily!',
     },
     {
       question: 'Do you offer same-day emergency dispatch?',

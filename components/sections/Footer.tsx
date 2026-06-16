@@ -116,7 +116,7 @@ export default function Footer() {
               © {currentYear} <span className="text-white font-semibold">DN FIXPRO</span>. All Rights Reserved. Same-Day Mobile Dispatch.
             </p>
             <p className="text-[10px] leading-relaxed text-brand-muted/70 max-w-xl">
-              We operate strictly via high-equipped mobile repair vans across South Florida (Boca Raton, Broward, Dade). We never maintain high-cost physical showrooms, allowing us to applied diagnostic fees directly and pass all discount rates forward.
+              We operate strictly via fully-equipped mobile repair vans across South Florida (Boca Raton, Broward, Dade). Our direct-dispatch mobile structure allows us to apply diagnostic fees 100% directly toward approved repair costs and pass optimum value forward.
             </p>
           </div>
 

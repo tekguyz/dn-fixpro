@@ -22,7 +22,7 @@ export default function SocialHub() {
             We Work in Public — See Our Live Portfolio
           </h2>
           <p className="text-sm sm:text-base text-brand-muted">
-            Because we operate a direct, low-overhead mobile dispatcher model rather than keeping a high-cost physical storefront, we publish our daily project videos and updates live. No hidden templates. See real field repairs directly on your feed.
+            As a modern direct-dispatch team, we believe in 100% transparency. We publish our daily project videos and updates live directly from the field. No staged templates—see real mechanical repairs directly on your feed.
           </p>
         </div>
 
@@ -173,11 +173,11 @@ export default function SocialHub() {
 
         {/* Bottom Alert / Location Note */}
         <div className="mt-14 max-w-lg mx-auto flex items-start gap-3 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-xl text-yellow-500">
-          <ShieldAlert className="w-5 h-5 shrink-0 mt-0.5 animate-pulse" />
+          <ShieldAlert className="w-5 h-5 shrink-0 mt-0.5" />
           <div className="space-y-0.5">
-            <h4 className="text-sm font-bold tracking-tight">Important Mobile-Only Warning</h4>
+            <h4 className="text-sm font-bold tracking-tight">Official Dispatch Notice</h4>
             <p className="text-xs leading-relaxed text-[#df9a3f]">
-              We have ZERO physical showroom overhead in Hollywood, FL. Any storefront claiming to represent DN FIXPRO is unaffiliated. Direct dispatch only via phone: (781) 885-8584.
+              Direct dispatch is coordinated exclusively via raw phone lines. Call us directly at (781) 885-8584 for same-day priority service window reservations.
             </p>
           </div>
         </div>

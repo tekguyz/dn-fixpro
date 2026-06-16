@@ -22,19 +22,36 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'DN FIXPRO | Handyman & Appliance Repair Hollywood FL',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://dn-fixpro.vercel.app/'),
+  title: {
+    default: 'DN FIXPRO | Handyman & Appliance Repair Hollywood FL',
+    template: '%s | DN FIXPRO'
+  },
   description: 'Professional, same-day residential & commercial appliance repair and handyman upgrades in Hollywood & South FL. $69 diagnostic fee applied directly to your repair!',
+  keywords: [
+    'Handyman Hollywood FL',
+    'Appliance Repair Broward County',
+    'Same Day Appliance Fix',
+    'Hollywood FL Handyman Upgrades',
+    'Gold Standard Diagnostics',
+    'Commercial Appliance Repair',
+    'Direct Mobile Dispatch Repair',
+    'DN FIXPRO Florida'
+  ],
+  authors: [{ name: 'DN FIXPRO Team' }],
+  creator: 'DN FIXPRO',
+  publisher: 'DN FIXPRO',
   openGraph: {
-    title: 'DN FIXPRO Handyman & Appliance Services',
-    description: 'Serving Hollywood, Miami, and Boca Raton. On-site mobile dispatch directly to your door.',
-    url: 'https://dnfixpro.com',
+    title: 'DN FIXPRO | Handyman & Appliance Repair Hollywood FL',
+    description: 'Professional, same-day residential & commercial appliance repair and handyman upgrades in Hollywood & South FL. $69 diagnostic fee applied directly to your repair!',
+    url: 'https://dn-fixpro.vercel.app/',
     siteName: 'DN FIXPRO',
     images: [
       {
-        url: '/web-app-manifest-512x512.png',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'DN FIXPRO Handyman & Appliance Repair South Florida',
+        alt: 'DN FIXPRO Premium Handyman & Same-Day Appliance Repair South Florida',
       },
     ],
     locale: 'en_US',
@@ -42,8 +59,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DN FIXPRO Handyman & Appliance Services',
-    description: 'Same-day mobile dispatch. $69 diagnostics applied to repairs.',
+    title: 'DN FIXPRO | Handyman & Appliance Repair Hollywood FL',
+    description: 'Same-day mobile dispatch. $69 diagnostics fully applied 100% to your repair costs. Save with low overhead!',
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
     icon: [
@@ -57,8 +86,9 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   appleWebApp: {
-    title: 'MyWebSite',
+    title: 'DN FIXPRO',
     capable: true,
+    statusBarStyle: 'black',
   },
 };
 
@@ -70,7 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       style={{ colorScheme: 'dark' }}
     >
       <head>
-        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <meta name="apple-mobile-web-app-title" content="DN FIXPRO" />
       </head>
       <body className="font-sans antialiased bg-brand-bg text-brand-text min-h-screen" suppressHydrationWarning>
         <Providers>{children}</Providers>
